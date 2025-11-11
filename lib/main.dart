@@ -14,8 +14,19 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.blue,
         ),
-        body: const Center(
-          child: Text('مرحباً بكم في الصفحة'),
+         body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Text('عبدالله التميمي', style: TextStyle(fontSize: 20)),
+              SizedBox(height: 8), // مسافة بين الأسماء
+              Text('معاذ بارفيد', style: TextStyle(fontSize: 20)),
+              SizedBox(height: 8),
+              Text('فرج عباس', style: TextStyle(fontSize: 20)),
+              SizedBox(height: 8),
+              Text('عبدالحميد التميمي', style: TextStyle(fontSize: 20)),
+            ],
+          ),
         ),
       ),
     );
