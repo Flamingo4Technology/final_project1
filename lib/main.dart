@@ -36,6 +36,19 @@ class MyApp extends StatelessWidget {
   },
   child: const Icon(Icons.add),
 ),
+bottomNavigationBar: Container(
+          color: Colors.blueGrey[50],
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: const [
+              Text('772572103', style: TextStyle(fontSize: 16)),
+              Text('774194202', style: TextStyle(fontSize: 16)),
+              Text('775089298', style: TextStyle(fontSize: 16)),
+              Text('774172011', style: TextStyle(fontSize: 16)),
+            ],
+          ),
+        ),
 
       ),
     );
