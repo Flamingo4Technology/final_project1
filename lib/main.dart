@@ -28,6 +28,15 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
+        floatingActionButton: FloatingActionButton(
+  onPressed: () {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('تم الضغط على الزر!')),
+    );
+  },
+  child: const Icon(Icons.add),
+),
+
       ),
     );
   }
